@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   title: `${content.companyName} - ${content.hero.description}`,
   description: content.about.description,
   icons: {
-    icon: '/api/favicon',
-    shortcut: '/api/favicon',
-    apple: '/api/favicon',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
     other: {
       rel: 'apple-touch-icon',
-      url: '/api/favicon',
+      url: '/favicon.svg',
     },
   },
 }
