@@ -9,7 +9,6 @@ interface Feature {
 interface Product {
   title: string;
   description: string;
-  price: number;
   benefit: string;
   image: string;
   isNew?: boolean;
@@ -63,7 +62,6 @@ export const content = {
       {
         title: 'Louise Aroma Lymphatic Essence',
         description: 'A powerful blend of natural ingredients designed to enhance lymphatic drainage and promote overall wellness.',
-        price: 880,
         benefit: 'Enhanced Circulation',
         image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80',
         isNew: true,
@@ -72,7 +70,6 @@ export const content = {
       {
         title: 'Louise Aroma Body Designer Essence',
         description: 'Premium aromatherapy essence that helps sculpt and tone while providing deep relaxation.',
-        price: 980,
         benefit: 'Body Contouring',
         image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80',
         isNew: false,
