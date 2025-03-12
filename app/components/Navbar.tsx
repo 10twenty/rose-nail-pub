@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { content } from '../../config/content';
 
 interface NavbarProps {
@@ -10,6 +10,8 @@ interface NavbarProps {
 export default function Navbar({ companyName }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,6 +63,23 @@ export default function Navbar({ companyName }: NavbarProps) {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isMenuOpen &&
+        menuRef.current &&
+        buttonRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMenuOpen]);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
@@ -153,6 +172,7 @@ export default function Navbar({ companyName }: NavbarProps) {
 
           {/* Mobile Menu Button */}
           <button
+            ref={buttonRef}
             className="md:hidden text-gray-600 hover:text-gray-900"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -176,6 +196,7 @@ export default function Navbar({ companyName }: NavbarProps) {
 
         {/* Mobile Menu */}
         <div
+          ref={menuRef}
           className={`md:hidden ${
             isMenuOpen ? 'max-h-[400px]' : 'max-h-0'
           } overflow-hidden transition-all duration-300 ease-in-out`}
