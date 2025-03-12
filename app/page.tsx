@@ -68,7 +68,7 @@ export default function Home() {
             </p>
             
             <div className="space-y-32">
-              {content.products.items.map((product: Product, index: number) => (
+              {content.products.items.map((product, index) => (
                 <ProductSection key={product.title} {...product} index={index} />
               ))}
             </div>
