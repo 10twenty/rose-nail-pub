@@ -39,40 +39,42 @@ interface ContactInfo {
 
 export const content = {
   theme: {
-    primaryColor: '#D4AF37', // Rich Metallic Gold - classic luxury color
+    primaryColor: '#FF69B4', // Hot Pink - feminine and spa-like
   },
   
-  companyName: "Rolex",
+  companyName: "Rose Nail Pub",
   
   hero: {
-    title: "Rolex",
-    description: "A Crown for Every Achievement",
-    cta: "Discover Our Collection",
+    title: "Rose Nail Pub",
+    description: "Your Premium Beauty & Wellness Destination in Asia",
     image: {
-      src: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80",
-      alt: "Premium Rolex timepiece displaying exceptional craftsmanship and detail"
-    }
+      src: "/images/hero-spa.jpg",
+      alt: "Elegant spa interior with modern decor and peaceful ambiance",
+      width: 1920,
+      height: 1080
+    },
+    cta: "Book Your Session",
   },
 
   products: {
-    title: "Featured Timepieces",
-    description: "Discover our exceptional collection of precision timepieces, crafted with unparalleled expertise and sophistication.",
+    title: "Featured Products",
+    description: "Discover our exclusive collection of premium beauty essences, carefully selected for your wellness journey.",
     items: [
       {
-        title: 'Daytona',
-        description: 'The ultimate chronograph, born for racing. Features a tachymetric scale and exceptional precision with self-winding mechanical movement.',
-        price: 140000,
-        benefit: 'Chronograph Excellence',
-        image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80',
+        title: 'Louise Aroma Lymphatic Essence',
+        description: 'A powerful blend of natural ingredients designed to enhance lymphatic drainage and promote overall wellness.',
+        price: 880,
+        benefit: 'Enhanced Circulation',
+        image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80',
         isNew: true,
         bestseller: true
       },
       {
-        title: 'GMT Master II',
-        description: 'The watch of choice for world travelers. Displays multiple time zones simultaneously with its distinctive bidirectional rotatable bezel.',
-        price: 126000,
-        benefit: 'Dual Time Zone Precision',
-        image: 'https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80',
+        title: 'Louise Aroma Body Designer Essence',
+        description: 'Premium aromatherapy essence that helps sculpt and tone while providing deep relaxation.',
+        price: 980,
+        benefit: 'Body Contouring',
+        image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80',
         isNew: false,
         bestseller: true
       }
@@ -81,26 +83,26 @@ export const content = {
 
   about: {
     title: "About Us",
-    description: "For over 8 years, we have been bringing the prestige of Rolex timepieces to discerning collectors and enthusiasts. Our commitment to excellence and authenticity has earned the trust of over 500 satisfied clients.",
-    quote: "Time never stops, excellence endures",
+    description: "At Rose Nail Pub, we've been delivering premium beauty and wellness services across Asia since 2015. Our commitment to excellence, coupled with our innovative treatments and professional expertise, has made us a trusted name in the beauty industry. We blend traditional techniques with modern innovations to provide an unparalleled spa experience.",
+    quote: "Beauty meets wellness, excellence meets comfort",
     features: [
       {
-        title: 'Expert Authentication',
-        description: 'Our certified specialists ensure the authenticity of every timepiece.',
+        title: 'Professional Service',
+        description: 'Our certified beauty specialists ensure premium service quality.',
         icon: {
           svg: '<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 2rem; height: 2rem;"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>'
         }
       },
       {
-        title: 'Curated Collection',
-        description: 'Access to over 200 premium timepieces from the most coveted collections.',
+        title: 'Premium Products',
+        description: 'Access to over 50 exclusive beauty and wellness products.',
         icon: {
           svg: '<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 2rem; height: 2rem;"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>'
         }
       },
       {
         title: '8+ Years Experience',
-        description: 'Serving Hong Kong\'s elite with unparalleled expertise since 2015.',
+        description: 'Serving clients across Asia with unparalleled expertise since 2015.',
         icon: {
           svg: '<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 2rem; height: 2rem;"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
         }
@@ -110,25 +112,25 @@ export const content = {
 
   whyUs: {
     title: "Why Choose Us",
-    description: "Experience the epitome of luxury timepiece acquisition with our unparalleled service and expertise.",
+    description: "Experience the perfect blend of luxury and wellness with our premium services and products.",
     features: [
       {
-        title: "Certified Authenticity",
-        description: "Every timepiece in our collection is meticulously verified for authenticity and condition.",
+        title: "Professional Excellence",
+        description: "Our team of certified specialists ensures the highest quality of service and care.",
         icon: {
           svg: '<svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>'
         }
       },
       {
-        title: "Expert Consultation",
-        description: "Our horological experts provide personalized guidance for your collection.",
+        title: "Premium Products",
+        description: "Exclusive access to high-quality beauty and wellness products.",
         icon: {
           svg: '<svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>'
         }
       },
       {
-        title: "After-Sales Service",
-        description: "Comprehensive support and service for your precious timepieces.",
+        title: "Personalized Care",
+        description: "Tailored treatments and services to meet your unique beauty needs.",
         icon: {
           svg: '<svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>'
         }
@@ -149,7 +151,7 @@ export const content = {
         label: "Years Experience"
       },
       {
-        value: 200,
+        value: 50,
         suffix: "+",
         label: "Products Available"
       }
@@ -158,24 +160,24 @@ export const content = {
 
   reviews: {
     title: "Client Testimonials",
-    description: "Hear from our distinguished clientele about their experience with our timepieces",
+    description: "Hear from our valued clients about their experience with our services",
     items: [
       {
-        name: "James Chen",
-        role: "Watch Collector",
-        text: "Their expertise in Rolex timepieces is unmatched. The Daytona I acquired through them is absolutely perfect."
+        name: "Sarah Chen",
+        role: "Regular Client",
+        text: "The lymphatic essence has transformed my wellness routine. The staff's expertise and attention to detail are exceptional."
       },
       {
-        name: "Victoria Wong",
-        role: "Luxury Enthusiast",
-        text: "The GMT Master II from their collection exceeded my expectations. Their attention to detail and authentication process gives me complete confidence."
+        name: "Michelle Wong",
+        role: "Beauty Enthusiast",
+        text: "Rose Nail Pub offers the perfect combination of luxury and results. Their body designer essence is a game-changer!"
       }
     ] as Review[]
   },
 
   contact: {
     title: "Contact Us",
-    description: "Connect with our specialists to explore our exceptional collection of timepieces.",
+    description: "Connect with our specialists to begin your wellness journey.",
     info: {
       address: {
         street: "Room A1, 10/F, NCB Innovation Centre, 888 Lai Chi Kok Road",
@@ -184,10 +186,10 @@ export const content = {
       email: "info@target-fox.xom",
       phone: "+852 63796758"
     },
-    cta: "Schedule a Consultation"
+    cta: "Book Your Session"
   },
 
   footer: {
-    copyright: "Rolex. All rights reserved."
+    copyright: "Rose Nail Pub. All rights reserved."
   }
 } 
