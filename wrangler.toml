@@ -1,19 +1,14 @@
 name = "rose-nail-pub"
-compatibility_date = "2024-03-11"
-compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-03-12"
 
+# Build configuration
 [build]
 command = "npm run build"
-cwd = "."
-dist = "out"
+output_directory = "out"
 
-[site]
-bucket = "out"
-entry-point = "."
-
-# Production environment only
+# Environment-specific configurations
 [env.production]
 name = "rose-nail-pub"
 
-# Add the pages build output directory
+# Pages configuration
 pages_build_output_dir = "out" 
