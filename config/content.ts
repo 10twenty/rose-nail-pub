@@ -52,7 +52,7 @@ export const content = {
       width: 1920,
       height: 1080
     },
-    cta: "Book Your Session",
+    cta: "Experience Luxury",
   },
 
   products: {
@@ -183,7 +183,7 @@ export const content = {
       email: "info@target-fox.xom",
       phone: "+852 63796758"
     },
-    cta: "Book Your Session"
+    cta: "Get in Touch"
   },
 
   footer: {
