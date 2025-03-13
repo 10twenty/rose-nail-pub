@@ -15,7 +15,7 @@ interface StatsSectionProps {
 
 export default function StatsSection({ items }: StatsSectionProps) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 

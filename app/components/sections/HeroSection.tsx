@@ -19,7 +19,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ title, description, image, cta }: HeroSectionProps) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 

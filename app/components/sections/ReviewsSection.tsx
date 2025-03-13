@@ -17,7 +17,7 @@ interface ReviewsSectionProps {
 
 export default function ReviewsSection({ title, description, items }: ReviewsSectionProps) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 

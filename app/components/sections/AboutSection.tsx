@@ -19,7 +19,7 @@ interface AboutSectionProps {
 
 export default function AboutSection({ title, description, quote, features }: AboutSectionProps) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 
